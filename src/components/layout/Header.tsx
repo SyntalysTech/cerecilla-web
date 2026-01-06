@@ -65,7 +65,7 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-lg tracking-wide text-[#8B0000] transition-colors duration-300">
+                <span className="font-bold text-lg tracking-wide text-[#BB282A] transition-colors duration-300">
                   CERECILLA
                 </span>
                 <span className={`text-[10px] tracking-widest uppercase transition-colors duration-300 ${
@@ -85,16 +85,16 @@ export default function Header() {
                   className={`relative text-sm font-medium transition-all duration-300 ${
                     pathname === link.href
                       ? isScrolled
-                        ? 'text-[#8B0000]'
+                        ? 'text-[#BB282A]'
                         : 'text-white'
                       : isScrolled
-                      ? 'text-slate-600 hover:text-[#8B0000]'
+                      ? 'text-slate-600 hover:text-[#BB282A]'
                       : 'text-white/80 hover:text-white'
                   }`}
                 >
                   {link.label}
                   {pathname === link.href && (
-                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#8B0000]" />
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#BB282A]" />
                   )}
                 </Link>
               ))}
@@ -171,7 +171,7 @@ export default function Header() {
               />
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="font-bold text-base tracking-wide text-[#8B0000]">
+              <span className="font-bold text-base tracking-wide text-[#BB282A]">
                 CERECILLA
               </span>
               <span className="text-[9px] tracking-widest uppercase text-slate-500">
@@ -209,13 +209,13 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center justify-between px-4 py-4 rounded-xl text-lg font-medium transition-all duration-200 ${
                       pathname === link.href
-                        ? 'text-[#8B0000] bg-[#8B0000]/5'
-                        : 'text-slate-700 hover:text-[#8B0000] hover:bg-slate-50'
+                        ? 'text-[#BB282A] bg-[#BB282A]/5'
+                        : 'text-slate-700 hover:text-[#BB282A] hover:bg-slate-50'
                     }`}
                   >
                     <span>{link.label}</span>
                     {pathname === link.href && (
-                      <span className="w-2 h-2 rounded-full bg-[#8B0000]" />
+                      <span className="w-2 h-2 rounded-full bg-[#BB282A]" />
                     )}
                   </Link>
                 </li>
