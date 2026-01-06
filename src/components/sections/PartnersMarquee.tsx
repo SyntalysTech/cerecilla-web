@@ -3,16 +3,16 @@
 import Image from 'next/image';
 
 const partners = [
-  { name: 'Endesa', logo: 'endesa.png' },
-  { name: 'Gana Energía', logo: 'ganaenergia.png' },
-  { name: 'Iberdrola', logo: 'iberdrola.png' },
-  { name: 'Plenitude', logo: 'plenitude.png' },
-  { name: 'TotalEnergies', logo: 'totalenergies.png' },
-  { name: 'Vodafone', logo: 'vodafone.png' },
-  { name: 'Orange', logo: 'orange.png' },
-  { name: 'Yoigo', logo: 'yoigo.png' },
-  { name: 'MásMóvil', logo: 'masmovil.png' },
-  { name: 'O2', logo: 'o2.png' },
+  { name: 'Endesa', logo: 'endesa.png', scale: 'scale-125' },
+  { name: 'Gana Energía', logo: 'ganaenergia.png', scale: 'scale-125' },
+  { name: 'Iberdrola', logo: 'iberdrola.png', scale: 'scale-125' },
+  { name: 'Plenitude', logo: 'plenitude.png', scale: '' },
+  { name: 'TotalEnergies', logo: 'totalenergies.png', scale: 'scale-125' },
+  { name: 'Vodafone', logo: 'vodafone.png', scale: '' },
+  { name: 'Orange', logo: 'orange.png', scale: '' },
+  { name: 'Yoigo', logo: 'yoigo.png', scale: '' },
+  { name: 'MásMóvil', logo: 'masmovil.png', scale: '' },
+  { name: 'O2', logo: 'o2.png', scale: 'scale-75' },
 ];
 
 export default function PartnersMarquee() {
@@ -49,7 +49,7 @@ export default function PartnersMarquee() {
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
                   fill
-                  className="object-contain"
+                  className={`object-contain ${partner.scale}`}
                 />
               </div>
             ))}
@@ -65,7 +65,7 @@ export default function PartnersMarquee() {
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
                   fill
-                  className="object-contain"
+                  className={`object-contain ${partner.scale}`}
                 />
               </div>
             ))}
