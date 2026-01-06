@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   description: 'Encuentra las mejores tarifas de luz, gas, telefonía, fibra y seguros. Servicio gratuito y personalizado para optimizar tus facturas.',
   keywords: 'comparador tarifas, luz, gas, telefonía, fibra, seguros, ahorro energético',
   authors: [{ name: 'Cerecilla S.L.' }],
+  icons: {
+    icon: '/assets/img/favicon.png',
+    apple: '/assets/img/favicon.png',
+  },
   openGraph: {
     title: 'Cerecilla - Tu Comparador de Tarifas Gratuito',
     description: 'Ahorra en tus facturas de luz, gas, telefonía y más con nuestro servicio de comparación gratuito.',

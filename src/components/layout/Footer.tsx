@@ -68,16 +68,18 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-3 mb-6">
-              <div className="relative w-12 h-12">
+            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
+              <div className="relative h-12 w-12 transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src="/assets/img/webapp-icon-logo.png"
+                  src="/assets/img/logo-icon-alone.png"
                   alt="Cerecilla"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-2xl">Cerecilla</span>
+              <span className="font-bold text-xl tracking-wide text-white">
+                CERECILLA
+              </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm">
               Tu aliado independiente para ahorrar en energia, telefonia, seguros y alarmas.
