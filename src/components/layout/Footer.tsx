@@ -85,6 +85,20 @@ export default function Footer() {
               Tu aliado independiente para ahorrar en energia, telefonia, seguros y alarmas.
               Servicio 100% gratuito y sin compromiso.
             </p>
+            {/* Address */}
+            <div className="mb-6">
+              <div className="flex items-start gap-2 text-slate-400 text-sm">
+                <svg className="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>
+                  C/ Lope de Vega nº 10 escalera izquierda 4ª, 6ª<br />
+                  Poble Nou, Barcelona C.P.: 08005
+                </span>
+              </div>
+            </div>
+
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
