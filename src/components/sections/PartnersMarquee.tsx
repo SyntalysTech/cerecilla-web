@@ -43,14 +43,13 @@ export default function PartnersMarquee() {
             {allPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center"
+                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center relative w-[100px] h-[40px] sm:w-[120px] sm:h-[50px] md:w-[140px] md:h-[60px]"
               >
                 <Image
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
-                  width={120}
-                  height={60}
-                  className="w-[100px] h-[50px] sm:w-[120px] sm:h-[60px] md:w-[140px] md:h-[70px] object-contain"
+                  fill
+                  className="object-contain"
                 />
               </div>
             ))}
@@ -60,14 +59,13 @@ export default function PartnersMarquee() {
             {allPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-dup-${index}`}
-                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center"
+                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center relative w-[100px] h-[40px] sm:w-[120px] sm:h-[50px] md:w-[140px] md:h-[60px]"
               >
                 <Image
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
-                  width={120}
-                  height={60}
-                  className="w-[100px] h-[50px] sm:w-[120px] sm:h-[60px] md:w-[140px] md:h-[70px] object-contain"
+                  fill
+                  className="object-contain"
                 />
               </div>
             ))}
