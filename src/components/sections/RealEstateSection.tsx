@@ -112,7 +112,7 @@ export default function RealEstateSection() {
 
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/assets/img/cherry-business.png"
+                  src="/assets/img/cherry-real-estate.png"
                   alt="Cerecilla para inmobiliarias"
                   width={350}
                   height={350}

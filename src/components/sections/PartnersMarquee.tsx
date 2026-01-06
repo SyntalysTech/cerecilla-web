@@ -11,6 +11,8 @@ const partners = [
   { name: 'Vodafone', logo: 'vodafone.png' },
   { name: 'Orange', logo: 'orange.png' },
   { name: 'Yoigo', logo: 'yoigo.png' },
+  { name: 'MásMóvil', logo: 'masmovil.png' },
+  { name: 'O2', logo: 'o2.png' },
 ];
 
 export default function PartnersMarquee() {
@@ -41,14 +43,14 @@ export default function PartnersMarquee() {
             {allPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 mx-4 sm:mx-6 md:mx-10 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24"
+                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center"
               >
                 <Image
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
-                  width={160}
-                  height={80}
-                  className="w-full h-full object-contain grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                  width={120}
+                  height={60}
+                  className="w-[100px] h-[50px] sm:w-[120px] sm:h-[60px] md:w-[140px] md:h-[70px] object-contain"
                 />
               </div>
             ))}
@@ -58,14 +60,14 @@ export default function PartnersMarquee() {
             {allPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-dup-${index}`}
-                className="flex-shrink-0 mx-4 sm:mx-6 md:mx-10 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24"
+                className="flex-shrink-0 mx-6 sm:mx-8 md:mx-12 flex items-center justify-center"
               >
                 <Image
                   src={`/assets/img/logos/${partner.logo}`}
                   alt={partner.name}
-                  width={160}
-                  height={80}
-                  className="w-full h-full object-contain grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                  width={120}
+                  height={60}
+                  className="w-[100px] h-[50px] sm:w-[120px] sm:h-[60px] md:w-[140px] md:h-[70px] object-contain"
                 />
               </div>
             ))}

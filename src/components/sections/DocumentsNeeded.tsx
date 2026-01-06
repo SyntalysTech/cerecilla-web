@@ -155,7 +155,7 @@ export default function DocumentsNeeded() {
 
               <div className="absolute inset-0 flex items-center justify-center">
                 <Image
-                  src="/assets/img/cherry-documents.png"
+                  src="/assets/img/cherry-how-it-works.png"
                   alt="Cerecilla gestiona todo por ti"
                   width={320}
                   height={320}
