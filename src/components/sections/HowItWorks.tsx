@@ -150,25 +150,25 @@ export default function HowItWorks() {
                 />
               </div>
 
-              <div className="absolute top-1/4 -left-4 bg-white rounded-xl shadow-lg p-4 animate-float" style={{ animationDelay: '1s' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-1/4 left-0 sm:-left-4 bg-white rounded-lg sm:rounded-xl shadow-lg p-2.5 sm:p-4 animate-float" style={{ animationDelay: '1s' }}>
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-md sm:rounded-lg bg-green-100 flex items-center justify-center">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm font-medium text-slate-700">100% Gratis</span>
+                  <span className="text-xs sm:text-sm font-medium text-slate-700">100% Gratis</span>
                 </div>
               </div>
 
-              <div className="absolute bottom-1/4 -right-4 bg-white rounded-xl shadow-lg p-4 animate-float" style={{ animationDelay: '2s' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#87CEEB]/20 flex items-center justify-center">
-                    <svg className="w-5 h-5 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute bottom-1/4 right-0 sm:-right-4 bg-white rounded-lg sm:rounded-xl shadow-lg p-2.5 sm:p-4 animate-float" style={{ animationDelay: '2s' }}>
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-md sm:rounded-lg bg-[#87CEEB]/20 flex items-center justify-center">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <span className="text-sm font-medium text-slate-700">Sin compromiso</span>
+                  <span className="text-xs sm:text-sm font-medium text-slate-700">Sin compromiso</span>
                 </div>
               </div>
             </div>

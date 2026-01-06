@@ -26,7 +26,7 @@ export default function Button({
   icon,
   iconPosition = 'right',
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap';
 
   const variants = {
     primary: 'bg-gradient-to-r from-[#87CEEB] to-[#5fb3d9] text-white shadow-lg shadow-[#87CEEB]/25 hover:shadow-xl hover:shadow-[#87CEEB]/30 hover:-translate-y-0.5 active:translate-y-0',
@@ -43,12 +43,14 @@ export default function Button({
 
   const combinedStyles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
-  const content = (
+  const content = icon ? (
     <>
-      {icon && iconPosition === 'left' && icon}
+      {iconPosition === 'left' && <span className="flex-shrink-0">{icon}</span>}
       <span>{children}</span>
-      {icon && iconPosition === 'right' && icon}
+      {iconPosition === 'right' && <span className="flex-shrink-0">{icon}</span>}
     </>
+  ) : (
+    children
   );
 
   if (href) {

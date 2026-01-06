@@ -104,7 +104,7 @@ export default function WhyFreeSection() {
             <div className="mt-10">
               <Button href="/contacto" size="lg">
                 Solicitar asesoramiento
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Button>
@@ -127,30 +127,30 @@ export default function WhyFreeSection() {
                 />
               </div>
 
-              <div className="absolute top-10 right-10 bg-white rounded-2xl shadow-xl p-5 animate-float" style={{ animationDelay: '0.5s' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute top-4 right-4 sm:top-10 sm:right-10 bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-5 animate-float" style={{ animationDelay: '0.5s' }}>
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-green-100 flex items-center justify-center">
+                    <svg className="w-4 h-4 sm:w-6 sm:h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-slate-800">0€</p>
-                    <p className="text-sm text-slate-500">Coste para ti</p>
+                    <p className="text-lg sm:text-2xl font-bold text-slate-800">0€</p>
+                    <p className="text-xs sm:text-sm text-slate-500">Coste para ti</p>
                   </div>
                 </div>
               </div>
 
-              <div className="absolute bottom-20 left-0 bg-white rounded-2xl shadow-xl p-5 animate-float" style={{ animationDelay: '1.5s' }}>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-[#87CEEB]/20 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="absolute bottom-8 left-0 sm:bottom-20 bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-5 animate-float" style={{ animationDelay: '1.5s' }}>
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-[#87CEEB]/20 flex items-center justify-center">
+                    <svg className="w-4 h-4 sm:w-6 sm:h-6 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-lg font-semibold text-slate-800">Sin letra pequeña</p>
-                    <p className="text-sm text-slate-500">Total transparencia</p>
+                    <p className="text-sm sm:text-lg font-semibold text-slate-800">Sin letra pequeña</p>
+                    <p className="text-xs sm:text-sm text-slate-500">Total transparencia</p>
                   </div>
                 </div>
               </div>

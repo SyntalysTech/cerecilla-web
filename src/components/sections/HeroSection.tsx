@@ -75,8 +75,8 @@ export default function HeroSection({
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               <Button href={ctaHref} size="lg">
-                {ctaText}
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span>{ctaText}</span>
+                <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Button>
@@ -87,13 +87,6 @@ export default function HeroSection({
           )}
         </div>
 
-        <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center p-2">
-            <div className="w-1 h-2 bg-white/60 rounded-full animate-bounce" />
-          </div>
-        </div>
       </div>
     </section>
   );

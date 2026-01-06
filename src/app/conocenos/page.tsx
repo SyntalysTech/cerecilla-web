@@ -302,7 +302,7 @@ export default function ConocenosPage() {
           </div>
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#87CEEB] via-[#87CEEB]/50 to-transparent" />
+            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#87CEEB] via-[#87CEEB]/50 to-transparent" />
 
             {timeline.map((item, index) => (
               <div
@@ -316,8 +316,8 @@ export default function ConocenosPage() {
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
                 <div className={`
-                  flex-1 ml-12 md:ml-0 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10
-                  ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}
+                  flex-1 ml-16 md:ml-0 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10
+                  ${index % 2 === 0 ? 'md:text-right md:mr-8' : 'md:text-left md:ml-8'}
                 `}>
                   <span className="text-4xl font-display font-bold text-[#87CEEB]">
                     {item.year}
@@ -330,7 +330,7 @@ export default function ConocenosPage() {
                   </p>
                 </div>
 
-                <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-[#87CEEB] flex items-center justify-center z-10">
+                <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-[#87CEEB] flex items-center justify-center z-10">
                   <div className="w-3 h-3 rounded-full bg-white" />
                 </div>
 

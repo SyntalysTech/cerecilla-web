@@ -3,15 +3,15 @@
 import Image from 'next/image';
 
 const partners = [
-  { name: 'Endesa', logo: 'endesa.svg' },
+  { name: 'Endesa', logo: 'endesa.png' },
   { name: 'Gana Energía', logo: 'ganaenergia.png' },
-  { name: 'Holaluz', logo: 'holaluz.svg' },
-  { name: 'Iberdrola', logo: 'iberdrola.svg' },
-  { name: 'Naturgy', logo: 'naturgy.svg' },
-  { name: 'Octopus', logo: 'octopus.svg' },
-  { name: 'Podo', logo: 'podo.svg' },
-  { name: 'Repsol', logo: 'repsol.svg' },
-  { name: 'TotalEnergies', logo: 'totalenergies.svg' },
+  { name: 'Holaluz', logo: 'holaluz.png' },
+  { name: 'Iberdrola', logo: 'iberdrola.png' },
+  { name: 'Plenitude', logo: 'plenitude.png' },
+  { name: 'TotalEnergies', logo: 'totalenergies.png' },
+  { name: 'Vodafone', logo: 'vodafone.png' },
+  { name: 'Orange', logo: 'orange.png' },
+  { name: 'Yoigo', logo: 'yoigo.png' },
 ];
 
 export default function PartnersMarquee() {
@@ -36,14 +36,14 @@ export default function PartnersMarquee() {
           {[...partners, ...partners].map((partner, index) => (
             <div
               key={`${partner.name}-${index}`}
-              className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center"
+              className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
             >
               <Image
                 src={`/assets/img/logos/${partner.logo}`}
                 alt={partner.name}
-                width={140}
-                height={60}
-                className="h-10 md:h-12 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                width={160}
+                height={80}
+                className="w-full h-full object-contain"
               />
             </div>
           ))}
