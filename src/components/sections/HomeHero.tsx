@@ -47,11 +47,35 @@ export default function HomeHero() {
               <span className="text-[#87CEEB]">sin complicaciones</span>
             </h1>
 
-            <p className={`text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mb-4 lg:mb-8 transition-all duration-1000 delay-200 ${
+            <p className={`text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-2xl mb-4 lg:mb-6 transition-all duration-1000 delay-200 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
               Comparamos las mejores tarifas de luz, gas, telefonía, fibra y seguros para que tú solo tengas que elegir.
             </p>
+
+            {/* Badges */}
+            <div className={`flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 transition-all duration-1000 delay-300 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-medium">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                100% Gratuito
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-medium">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Independiente
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-medium">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#87CEEB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                +20 Compañías
+              </span>
+            </div>
           </div>
 
           {/* Formulario */}
