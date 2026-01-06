@@ -15,6 +15,9 @@ const partners = [
 ];
 
 export default function PartnersMarquee() {
+  // Triplicamos los logos para asegurar continuidad perfecta
+  const allPartners = [...partners, ...partners, ...partners, ...partners];
+
   return (
     <section className="py-16 md:py-20 bg-white border-y border-slate-100 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-10">
@@ -29,24 +32,45 @@ export default function PartnersMarquee() {
       </div>
 
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+        {/* Gradient overlays */}
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
-        <div className="flex animate-marquee">
-          {[...partners, ...partners].map((partner, index) => (
-            <div
-              key={`${partner.name}-${index}`}
-              className="flex-shrink-0 mx-8 md:mx-12 flex items-center justify-center w-32 h-20 md:w-40 md:h-24"
-            >
-              <Image
-                src={`/assets/img/logos/${partner.logo}`}
-                alt={partner.name}
-                width={160}
-                height={80}
-                className="w-full h-full object-contain"
-              />
-            </div>
-          ))}
+        {/* Marquee container */}
+        <div className="flex overflow-hidden">
+          <div className="flex animate-marquee-infinite">
+            {allPartners.map((partner, index) => (
+              <div
+                key={`${partner.name}-${index}`}
+                className="flex-shrink-0 mx-4 sm:mx-6 md:mx-10 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24"
+              >
+                <Image
+                  src={`/assets/img/logos/${partner.logo}`}
+                  alt={partner.name}
+                  width={160}
+                  height={80}
+                  className="w-full h-full object-contain grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+          {/* Duplicado para continuidad infinita */}
+          <div className="flex animate-marquee-infinite" aria-hidden="true">
+            {allPartners.map((partner, index) => (
+              <div
+                key={`${partner.name}-dup-${index}`}
+                className="flex-shrink-0 mx-4 sm:mx-6 md:mx-10 flex items-center justify-center w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24"
+              >
+                <Image
+                  src={`/assets/img/logos/${partner.logo}`}
+                  alt={partner.name}
+                  width={160}
+                  height={80}
+                  className="w-full h-full object-contain grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
