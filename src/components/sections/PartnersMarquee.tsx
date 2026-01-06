@@ -5,7 +5,6 @@ import Image from 'next/image';
 const partners = [
   { name: 'Endesa', logo: 'endesa.png' },
   { name: 'Gana Energía', logo: 'ganaenergia.png' },
-  { name: 'Holaluz', logo: 'holaluz.png' },
   { name: 'Iberdrola', logo: 'iberdrola.png' },
   { name: 'Plenitude', logo: 'plenitude.png' },
   { name: 'TotalEnergies', logo: 'totalenergies.png' },

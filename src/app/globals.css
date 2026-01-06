@@ -181,12 +181,12 @@ video {
 }
 
 .animate-marquee-infinite {
-  animation: marquee-infinite 25s linear infinite;
+  animation: marquee-infinite 60s linear infinite;
 }
 
 @media (max-width: 639px) {
   .animate-marquee-infinite {
-    animation: marquee-infinite 15s linear infinite;
+    animation: marquee-infinite 40s linear infinite;
   }
 }
 
