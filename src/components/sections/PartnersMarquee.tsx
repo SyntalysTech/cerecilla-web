@@ -16,8 +16,8 @@ const partners = [
 ];
 
 export default function PartnersMarquee() {
-  // Triplicamos los logos para asegurar continuidad perfecta
-  const allPartners = [...partners, ...partners, ...partners, ...partners];
+  // Solo usamos el array base, la duplicación la hace el segundo contenedor
+  const allPartners = partners;
 
   return (
     <section className="py-16 md:py-20 bg-white border-y border-slate-100 overflow-hidden">
